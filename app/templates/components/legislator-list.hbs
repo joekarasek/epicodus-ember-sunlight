@@ -1,0 +1,5 @@
+<ul>
+  {{#each sortedLegislators as |legislator|}}
+    <li> {{legislator.first_name}} {{legislator.last_name}} was born on {{legislator.birthday}}<br>Contact: <a href=  {{legislator.contact_form}}>{{legislator.contact_form}}</a></li>
+  {{/each}}
+</ul>

@@ -8,5 +8,7 @@ export default Ember.Route.extend({
      console.log(responseJSON.results);
      return responseJSON.results;
    });
-  }
+ },
+ sortBy: ['icpsr_id:asc'],
+ sortedLegislators: Ember.computed.sort('model', 'sortBy'),
 });

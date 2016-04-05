@@ -7,7 +7,7 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('results', { path: '/results/:zip'});
-  this.route('finance');
+  this.route('finance', { path: '/finance/:fec_id'});
 });
 
 export default Router;

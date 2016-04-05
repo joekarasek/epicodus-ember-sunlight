@@ -1,1 +1,10 @@
-{{outlet}}
+<div class="panel panel-default">
+  <div class="panel-heading">
+    {{ model.name }} <strong style="color:red;">{{ model.party }}</strong>
+  </div>
+  <div class="panel-body">
+    Cash on hand ${{ model.cash_on_hand }}<br>
+    Total contributions ${{ model.total_contributions }}<br>
+    Outstanding loans ${{ model.outstanding_loans }}
+  </div>
+</div>
